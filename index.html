@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top_section">
+      <h1>Will you be my Valentines?</h1>
+      <img src="images/bubu-dudu-sseeyall.gif" />
+    </div>
+    <div class = "button-section">
+      <form action="page2.html">
+        <button type="submit" class="design">YES</button>
+      </form>
+      <button id="chaseButton">NO</button>
+    </body>
+    </div>
+  <script>
+    const button = document.getElementById("chaseButton");
+
+    button.addEventListener("mouseover", () => {
+      const randomX = Math.random() * (window.innerWidth - button.offsetWidth);
+      const randomY = Math.random() * (window.innerHeight - button.offsetHeight);
+      button.style.position = 'absolute'; 
+
+      const currentPadding = parseFloat(window.getComputedStyle(button).padding);
+      if(currentPadding < 2){
+        button.style.display = 'none';
+      }
+      else{
+        button.style.padding = `${currentPadding - 0.5}px`;
+      }
+      button.style.left = `${randomX}px`;
+      button.style.top = `${randomY}px`;
+    });
+  </script>
+</html>

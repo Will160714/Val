@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #fce4ec; 
+
+.top_section {
+  text-align: center; 
+}
+
+h1 {
+  color: #e91e63; 
+}
+
+#chaseButton {
+  background-color: #fffff0;
+  color: #8a0000;
+  font-weight: bolder;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
+}
+
+.design {
+  background-color: #fffff0;
+  color: #e91e63;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.button_section {
+  display: flex; 
+  gap: 1000px;
+  justify-content: center; 
+  margin-top: 20px;
+  position: relative; 
+  flex-direction: row;
+}
+
+form {
+  display: inline-block;
+}
